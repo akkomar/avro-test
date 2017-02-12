@@ -1,0 +1,30 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "PersonNewFieldInTheBeginning",
+  "fields": [
+    {
+      "name": "newFieldInTheBeginning",
+      "type": ["null","string"]
+    },
+    {
+      "name": "userName",
+      "type": "string"
+    },
+    {
+      "name": "favouriteNumber",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "name": "interests",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}
+
